@@ -1,0 +1,19 @@
+
+
+article {
+    box-sizing: border-box;
+    background-color: #54ff42;
+}
+
+article h2 {
+    color: white;
+    background-color: #35383a;
+}
+
+.red-background {
+    border: black dotted 2px;
+}
+
+h1 {
+    background-color: linen;
+}

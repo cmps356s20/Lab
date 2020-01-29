@@ -1,0 +1,23 @@
+body{
+   width: 90%;
+    margin: 0 auto;
+}
+#wrapper{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr 10fr 1fr;
+}
+aside{
+    grid-column: span 2;
+    background-color: #35383a;
+}
+main{
+    grid-column: span 8;
+    background-color: aqua;
+}
+nav, footer{
+    grid-column: span 12;
+    background-color: black;
+    color: white;
+
+}
