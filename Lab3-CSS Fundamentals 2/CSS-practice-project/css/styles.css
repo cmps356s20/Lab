@@ -1,0 +1,15 @@
+body{
+    background-color: aqua;
+}
+
+.box {
+    min-height: 100px;
+    min-width: 100px;
+    border: black 1px solid;
+    text-align: center;
+    background-color: yellow;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns:  minmax(600px , 3fr) 1fr 2fr ;
+}
