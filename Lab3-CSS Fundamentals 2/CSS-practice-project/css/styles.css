@@ -1,4 +1,4 @@
-body{
+body {
     background-color: aqua;
 }
 
@@ -8,8 +8,42 @@ body{
     border: black 1px solid;
     text-align: center;
     background-color: yellow;
+    font-size: 2em;
 }
+
 .grid-container {
+    border: black 1px solid;
     display: grid;
-    grid-template-columns:  minmax(600px , 3fr) 1fr 2fr ;
+    /*grid-template-columns:  minmax(600px , 3fr) 1fr 2fr ;*/
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: repeat(10, 1fr);
+    grid-gap: 10px;
+    justify-content: center;
+    /*justify-items: start;*/
+    grid-template-areas:
+            "first first first"
+            "first first first"
+            "second fourth third"
+            "second fourth third";
 }
+
+.first {
+    grid-area: first;
+    /*grid-column: span 3;*/
+
+}
+
+.second {
+    grid-area: second;
+    /*grid-row: span 2/4;*/
+}
+
+.third {
+    grid-area: third;
+    /*grid-column: 2/span 2;*/
+}
+.fourth {
+    grid-area: fourth;
+    /*grid-column: 2/span 2;*/
+}
+
