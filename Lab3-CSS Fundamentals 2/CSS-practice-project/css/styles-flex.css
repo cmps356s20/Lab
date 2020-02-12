@@ -1,0 +1,45 @@
+body{
+    background-color: aqua;
+}
+.box {
+    min-height: 100px;
+    min-width: 100px;
+    border: black 1px solid;
+    text-align: center;
+    background-color: yellow;
+    font-size: 2em;
+}
+.flex-container{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.resize-icon{
+    font-size: 10em;
+    color: yellow;
+}
+nav ul {
+    display: flex;
+}
+nav ul  li{
+    font-size: 2em;
+    margin: 10px;
+    display: flex;
+}
+
+nav ul  li:hover{
+    font-size: 4em;
+    color: white;
+    text-decoration: underline;
+}
+.second {
+
+}
+.third {
+
+}
+.fourth {
+
+}
+
