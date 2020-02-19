@@ -99,33 +99,40 @@ let y=11;
 // multiply(a, b);
 // multiply2(a, b);
 
-function isPositive(number){
-    if(number > 0)
-        return true;
-    else
-        return false;
-}
+// function isPositive(number){
+//     if(number > 0)
+//         return true;
+//     else
+//         return false;
+// }
+//
+// let isPositive1 = function (number){
+//         if(number > 0)
+//             return true;
+//         else
+//             return false;
+// }
+//
+// let isPositive2 =  (number) =>{
+//     return number >0 ? true : false;
+// }
+//
+// let isPositive3 =  number =>{
+//     return number >0 ? true : false;
+// }
+//
+// //step 1 - change the function to arrow
+// let  isPositive4= number => number > 0 ?  true :  false;
+// let  isPositive5= number => number > 0 ;
+//
+// console.log(isPositive5(-1));
+//
+// //change into an arrow function
+// //single line arrow function
 
-let isPositive1 = function (number){
-        if(number > 0)
-            return true;
-        else
-            return false;
-}
+// let isEven = number => number %2 == 0 ? console.log('Even') : console.log('Odd');
+//
+// isEven(124);
+// isEven(-123);
 
-let isPositive2 =  (number) =>{
-    return number >0 ? true : false;
-}
-
-let isPositive3 =  number =>{
-    return number >0 ? true : false;
-}
-
-//step 1 - change the function to arrow
-let  isPositive4= number => number > 0 ?  true :  false;
-let  isPositive5= number => number > 0 ;
-
-console.log(isPositive5(-1));
-
-//change into an arrow function
-//single line arrow function
+//Arrays
