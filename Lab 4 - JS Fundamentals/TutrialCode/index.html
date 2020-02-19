@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+        .container {
+          
+        }
+        @media screen and (min-width: 600px) {
+            .container {
+                display: flex;
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+       <div class="container">
+           <div class="box">Top</div>
+           <div class="box">Left</div>
+           <div class="box">Middle</div>
+           <div class="box">Right</div>
+           <div class="box">Bottom</div>
+       </div>
+</body>
+</html>
