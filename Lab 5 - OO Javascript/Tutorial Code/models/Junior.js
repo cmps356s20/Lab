@@ -6,3 +6,5 @@ class Junior extends Student{
         console.log('Have fun, gpa is still young and can grow');
     }
 }
+
+module.exports = Junior;

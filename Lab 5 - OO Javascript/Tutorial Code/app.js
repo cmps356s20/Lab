@@ -1,3 +1,8 @@
+
+
+
+
+
 // //object literals
 //
 // function CourseF(name , code){
@@ -61,10 +66,10 @@ course2.display();
 
 //const student = new Student(123, "Abdulah", 100);
 
-
-const senior1 = new Senior(123, "Abdulah", 100, 99);
-senior1.registerForSeniorProject();
-senior1.display();
+//
+// const senior1 = new Senior(123, "Abdulah", 100, 99);
+// senior1.registerForSeniorProject();
+// senior1.display();
 
 
 

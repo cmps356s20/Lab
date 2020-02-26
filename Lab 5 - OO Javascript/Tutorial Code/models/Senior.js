@@ -8,3 +8,5 @@ class Senior extends Student{
         console.log('You are registered');
     }
 }
+
+module.exports = Senior;
