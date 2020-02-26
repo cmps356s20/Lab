@@ -1,3 +1,14 @@
+const Student = require('./models/Student')
+const Senior = require('./models/Senior')
+const Junior = require('./models/Junior')
+
+
+const student = new Student(123, "Abdulah", 100);
+
+
+const senior1 = new Senior(123, "Abdulah", 100, 99);
+senior1.registerForSeniorProject();
+senior1.display();
 
 
 
@@ -57,19 +68,12 @@ class Course {
     }
 }
 
-const course = new Course("Data Structures", "CMPS-303");
-const course2 = new Course("OOM", "CMPS251");
-
-course.display();
-course2.display();
-
-
-//const student = new Student(123, "Abdulah", 100);
-
+// const course = new Course("Data Structures", "CMPS-303");
+// const course2 = new Course("OOM", "CMPS251");
 //
-// const senior1 = new Senior(123, "Abdulah", 100, 99);
-// senior1.registerForSeniorProject();
-// senior1.display();
+// course.display();
+// course2.display();
+
 
 
 

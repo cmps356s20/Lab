@@ -1,4 +1,5 @@
 //inheritance
+const Student = require('./Student')
 class Senior extends Student{
     constructor(id, name , age, exitExam) {
         super(id, name , age);

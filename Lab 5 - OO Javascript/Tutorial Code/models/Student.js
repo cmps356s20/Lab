@@ -9,3 +9,4 @@ class Student {
         console.log(`Name ${name} ID : ${this.id}`);
     }
 }
+module.exports = Student;

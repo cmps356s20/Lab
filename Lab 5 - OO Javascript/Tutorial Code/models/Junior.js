@@ -1,3 +1,4 @@
+const Student = require('./Student')
 class Junior extends Student{
     goToWorkshop(){
         console.log('Go to workshops');
