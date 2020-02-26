@@ -58,21 +58,14 @@ const course2 = new Course("OOM", "CMPS251");
 course.display();
 course2.display();
 
-class Student {
-    constructor(id, name , age) {
-        this.id = id;
-        this.name = name;
-        this.age = age;
-    }
 
-    xyz() {
-        console.log(`Name :${name} `);
-    }
-}
+//const student = new Student(123, "Abdulah", 100);
 
 
-const student = new Student(123, "Abdulah", 100);
-student.xyz();
+const senior1 = new Senior(123, "Abdulah", 100, 99);
+senior1.registerForSeniorProject();
+senior1.display();
+
 
 
 
