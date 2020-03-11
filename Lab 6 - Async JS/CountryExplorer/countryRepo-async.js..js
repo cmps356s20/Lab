@@ -2,22 +2,30 @@ const fs = require('fs-extra')
 
 
 async function getCountry(countryName) {
-
-    fs.readFile('./data/country.json')
-        .then(data=>JSON.parse(data))
-        .then(countries=> countries.find(c=>c.name===countryName))
-        .then(country=> console.log(country))
-        .catch(err=> console.log(err));
-
     try{
         const data = await fs.readFile('./data/country.json');
         const countries = JSON.parse(data);
         const country  = countries.find(c=>c.name===countryName);
-        console.log(`the capital city of ${countryName} is ${country.capital}`);
+
+        const litData = await fs.readFile('./data/country-literacy-rate.json');
+        const countryLiteracies = JSON.parse(litData);
+
+        const avgLiteracyRate = countryLiteracies
+            .filter(c=> c.country==countryName && c.indicator!="Adult Literacy Rate")
+            .map(cl=> cl.rate)
+            .reduce((x,y)=> x+y)/2;
+
+        country['AvgLitRate'] = avgLiteracyRate;
+
+        // delete country.translations;
+        // delete country.name;
+
+        console.log(country);
+
+
     }catch (e) {
         console.log(e);
     }
 }
 
-getCountry("Germany");
-console.log("I was not bloacked by the long running method");
+getCountry("Qatar");
