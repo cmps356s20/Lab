@@ -46,8 +46,8 @@ class UnitConverter {
 
 module.exports = new UnitConverter();
 
-/*
 const unitConverter = new UnitConverter();
+/*
 console.log( '1 Kg is', unitConverter.kgToOunce(1), 'ounce' );
 console.log( '2 Kg is', unitConverter.kgToPound(2), 'poud');
 
