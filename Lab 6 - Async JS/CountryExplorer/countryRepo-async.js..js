@@ -1,7 +1,6 @@
 const fs = require('fs-extra')
 
-
-async function getCountry(countryName) {
+module.exports = async function getCountry(countryName) {
     try{
         const data = await fs.readFile('./data/country.json');
         const countries = JSON.parse(data);
@@ -20,7 +19,8 @@ async function getCountry(countryName) {
         // delete country.translations;
         // delete country.name;
 
-        console.log(country);
+        // console.log(country);
+        return country;
 
 
     }catch (e) {
@@ -28,4 +28,3 @@ async function getCountry(countryName) {
     }
 }
 
-getCountry("Qatar");
