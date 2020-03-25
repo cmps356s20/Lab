@@ -150,6 +150,6 @@ class AccountRepository {
     }
 }
 
-const repoTest = new AccountRepository();
 
-console.log(__dirname)
+module.exports = new AccountRepository();
+
