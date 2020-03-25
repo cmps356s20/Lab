@@ -12,7 +12,26 @@
     "minimumBalance": 1000
   },
   {
+    "accountNo": 456,
     "acctType": "Saving",
+    "balance": 555500,
+    "minimumBalance": 1000
+  },
+  {
+    "accountNo": 784,
+    "acctType": "Current",
+    "balance": 500,
+    "minimumBalance": 1000
+  },
+  {
+    "accountNo": 324,
+    "acctType": "Saving",
+    "balance": 60001,
+    "minimumBalance": 1000
+  },
+  {
+    "accountNo": 324,
+    "acctType": "Current",
     "balance": 555500,
     "minimumBalance": 1000
   }
