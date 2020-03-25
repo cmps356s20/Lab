@@ -3,10 +3,10 @@ const morgan = require('morgan')
 const accountRepo = require('./repositories/account-repository')
 
 //next step is to create an app
-
 const app = express();
 const port = 5000;
 
+//add the middlewares
 app.use(morgan('dev'));
 app.use(express.json()) //user will send me an object
 //body will parse the data and it put it back to  req.body()
