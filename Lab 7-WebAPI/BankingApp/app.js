@@ -9,6 +9,7 @@ const port = 5000;
 
 app.use(morgan('dev'));
 app.use(express.json()) //user will send me an object
+//body will parse the data and it put it back to  req.body()
 
 
 app.get('/api/accounts/accountType/:acctType', async (req, res)=>{
@@ -24,14 +25,17 @@ app.get('/api/accounts/:id', async (req, res)=>{
 app.delete('/api/accounts/:id', async (req, res)=>{
     const account = await accountRepo.deleteAccount(req.params.id)
 
-    res.json("account deleted")
+    res.send("account deleted")
 })
 
-app.post('/api/accounts/:id', async (req, res)=>{
-    const account = req.body();
-    await accountRepo.addAccount(account) //account the data.json file
+app.post('/api/accounts', async (req, res)=>{
+    await accountRepo.addAccount(req.body)
+    res.json("account created with account No " + req.body.accountNo)
+})
 
-    res.json("account deleted")
+app.put('/api/accounts/:id', async (req, res)=>{
+    await accountRepo.updateAccount(req.body)
+    res.json("account created with account No " + req.body.accountNo)
 })
 
 app.listen(port, ()=>{
