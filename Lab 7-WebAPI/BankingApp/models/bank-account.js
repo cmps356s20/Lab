@@ -15,7 +15,6 @@ class BankAccount {
 
         this.balance -= amount;
 
-
     }
 
     toString() {

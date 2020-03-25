@@ -1,9 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2d0619d1-a237-4fd2-afd9-adbb2f33af2a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/accounts.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/accounts.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/bank-account.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/bank-account.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repositories/account-repository.js" beforeDir="false" afterPath="$PROJECT_DIR$/repositories/account-repository.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="ProjectId" id="1ZbCV82tl1wg8pqT4kXyKKFzbay" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Mongo.account-repository.js (1)">
+    <configuration name="account-repository.js (1)" type="MongoRunConfiguration" factoryName="Mongo" temporary="true">
+      <module name="BankingApp" />
+      <setting name="path" value="$PROJECT_DIR$/repositories/account-repository.js" />
+      <setting name="shellParams" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="account-repository.js" type="MongoRunConfiguration" factoryName="Mongo" temporary="true">
+      <module name="BankingApp" />
+      <setting name="path" value="$PROJECT_DIR$/repositories/account-repository.js" />
+      <setting name="shellParams" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Mongo.account-repository.js (1)" />
+        <item itemvalue="Mongo.account-repository.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2d0619d1-a237-4fd2-afd9-adbb2f33af2a" name="Default Changelist" comment="" />
+      <created>1585139994576</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585139994576</updated>
+      <workItem from="1585139999613" duration="3400000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="539" y="441" key="#account-repository.js" timestamp="1585140610077">
+      <screen x="0" y="23" width="3440" height="1379" />
+    </state>
+    <state x="539" y="441" key="#account-repository.js/0.23.3440.1379@0.23.3440.1379" timestamp="1585140610077" />
+    <state x="701" y="441" key="#account-repository.js_(1)" timestamp="1585141501530">
+      <screen x="0" y="23" width="3440" height="1379" />
+    </state>
+    <state x="701" y="441" key="#account-repository.js_(1)/0.23.3440.1379@0.23.3440.1379" timestamp="1585141501530" />
+    <state x="649" y="338" width="670" height="676" key="search.everywhere.popup" timestamp="1585141183529">
+      <screen x="0" y="23" width="3440" height="1379" />
+    </state>
+    <state x="649" y="338" width="670" height="676" key="search.everywhere.popup/0.23.3440.1379@0.23.3440.1379" timestamp="1585141183529" />
   </component>
 </project>

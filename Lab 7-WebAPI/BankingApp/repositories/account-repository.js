@@ -10,7 +10,7 @@ class AccountRepository {
     }
 
     //Get account from accounts.json file
-    async getAccounts(acctType) {
+    async getAccounts(acctType) {  //All, Saving , Current
         let accounts = await fs.readJSON(this.accountsFilePath);
 
         if (acctType && acctType != 'All') {
@@ -150,4 +150,6 @@ class AccountRepository {
     }
 }
 
-module.exports = new AccountRepository();
+const repoTest = new AccountRepository();
+
+console.log(__dirname)
