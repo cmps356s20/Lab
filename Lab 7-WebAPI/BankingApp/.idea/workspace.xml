@@ -20,6 +20,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="ProjectId" id="1ZbCV82tl1wg8pqT4kXyKKFzbay" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -33,7 +39,10 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="11.9.0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Services" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -73,7 +82,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585139994576</updated>
-      <workItem from="1585139999613" duration="9900000" />
+      <workItem from="1585139999613" duration="10341000" />
     </task>
     <servers />
   </component>
@@ -89,6 +98,10 @@
       <screen x="0" y="23" width="3440" height="1379" />
     </state>
     <state x="701" y="441" key="#account-repository.js_(1)/0.23.3440.1379@0.23.3440.1379" timestamp="1585141501530" />
+    <state x="197" y="356" key="SettingsEditor" timestamp="1585150730002">
+      <screen x="0" y="23" width="3440" height="1379" />
+    </state>
+    <state x="197" y="356" key="SettingsEditor/0.23.3440.1379@0.23.3440.1379" timestamp="1585150730002" />
     <state x="642" y="474" width="639" height="486" key="find.popup" timestamp="1585147177111">
       <screen x="0" y="23" width="3440" height="1379" />
     </state>
