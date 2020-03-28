@@ -1,11 +1,5 @@
 [
   {
-    "accountNo": 123,
-    "acctType": "Saving",
-    "balance": 500000,
-    "minimumBalance": 1000
-  },
-  {
     "accountNo": 784,
     "acctType": "Current",
     "balance": 500,
@@ -18,9 +12,27 @@
     "minimumBalance": 1000
   },
   {
-    "accountNo": 324,
+    "accountNo": 789,
     "acctType": "Current",
-    "balance": 555500,
+    "balance": 500,
+    "minimumBalance": 1000
+  },
+  {
+    "accountNo": 327,
+    "acctType": "Saving",
+    "balance": 60001,
+    "minimumBalance": 1000
+  },
+  {
+    "accountNo": 123,
+    "acctType": "Saving",
+    "balance": 1000000000,
+    "minimumBalance": 1000
+  },
+  {
+    "accountNo": 4444,
+    "acctType": "Saving",
+    "balance": 1000000000,
     "minimumBalance": 1000
   }
 ]

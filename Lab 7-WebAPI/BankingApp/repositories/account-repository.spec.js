@@ -11,7 +11,7 @@ describe('Accounts Repository Test Suite', () => {
             .have.a.have.property('length', 4);
     });
 
-    it('getAccount(456) should return an object with accountNumber 456', async () => {
+    it('getAccounts(456) should return an object with accountNumber 456', async () => {
 
         let account = await accountRepo.getAccount(456);
         expect(account)
