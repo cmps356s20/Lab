@@ -12,7 +12,4 @@ router.route('/books/:isbn')
     .put(bookService.updateBook)
     .delete(bookService.deleteBook)
 
-// /api/books/
-
-
 module.exports = router;
