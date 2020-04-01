@@ -3,5 +3,7 @@ const express = require('express')
 const router = express.Router();
 
 router.get('/books/summary' , bookService.getBookSummary)
+router.get('/books', bookService.getBooks)
+
 
 module.exports = router;
