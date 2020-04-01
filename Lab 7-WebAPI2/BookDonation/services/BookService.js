@@ -34,6 +34,46 @@ class BookService{
                 .send("Something terrible happened on the server")
         }
     }
+    async addBook(req, res){
+        try{
+            const newBook = req.body;
+            await  accountRepository.addBook(newBook)
+            res.status(201)
+                .send("Book Added")
+
+        }catch(e){
+            res.status(500)
+                .send("Something terrible happened on the server")
+        }
+    }
+
+    async deleteBook(req, res){
+        try{
+            const isbn = req.params.isbn;
+            await  accountRepository.deleteBook(isbn)
+            res.status(200)
+                .send("Book Deleted")
+
+        }catch(e){
+            res.status(500)
+                .send("Something terrible happened on the server")
+        }
+    }
+    async updateBook(req, res){
+        try{
+            const isbn = req.params.isbn;
+            const updatedBook = req.body;
+
+            await  accountRepository.updateBook(isbn, updatedBook)
+            res.status(200)
+                .send("Book is Updated")
+
+        }catch(e){
+            res.status(500)
+                .send("Something terrible happened on the server")
+        }
+    }
+
 }
 
 module.exports = new BookService();

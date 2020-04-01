@@ -3,7 +3,16 @@ const express = require('express')
 const router = express.Router();
 
 router.get('/books/summary' , bookService.getBookSummary)
-router.get('/books', bookService.getBooks)
+
+router.route('/books')
+    .get(bookService.getBooks)
+    .post(bookService.addBook)
+
+router.route('/books/:isbn')
+    .put(bookService.updateBook)
+    .delete(bookService.deleteBook)
+
+// /api/books/
 
 
 module.exports = router;

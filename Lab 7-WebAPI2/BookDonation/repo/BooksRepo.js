@@ -57,12 +57,49 @@ class BooksRepo{
         return categorisedBooks
     }
 
+    async addBook(book){
+        let books = await this.readFileContent()
+        books.push(book)
+        this.saveBooks(books)
+    }
+
+    async deleteBook(isbn){
+        let books = await this.readFileContent()
+        const index = books.findIndex(book=> book.isbn == isbn)
+        books.splice(index, 1);
+        this.saveBooks(books)
+    }
+
+    async updateBook(isbn, book){
+        let books = await this.readFileContent()
+        const index = books.findIndex(book=> book.isbn == isbn)
+        books[index] = {...books[index], ...book};
+        this.saveBooks(books)
+
+    }
+
+    async saveBooks(books){
+        await this.fse.writeJson(this.catalogBookFilename, books)
+    }
 }
 
 module.exports = new BooksRepo()
 
 let Book = new BooksRepo();
 
-
+//
+// let obj = {
+//     name : "Abdulahi",
+//     age : 123,
+//     gender : "male"
+// }
+//
+// let update = {
+//     name : "Mohamed",
+// }
+//
+// obj = update;
+//
+// console.log(obj)
 
 
