@@ -31,3 +31,5 @@ console.log('<table><tr>' + mapped +'</tr></table>');
 
 
 
+
+

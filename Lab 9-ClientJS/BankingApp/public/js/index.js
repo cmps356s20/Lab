@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", async () => {
-    await getAccounts("All");
+    await handleLoadAccounts("All");
 })
 
 //navigation
@@ -39,13 +39,62 @@ async function handleLoadAccounts(acctType) {
 
 function changeAccountToHTMLRow(account) {
     return `
-        <tr>
+        <tr id="row-${account.accountNo}">
             <td>${account.accountNo}</td>
             <td>${account.acctType}</td>
             <td>${account.balance}</td>  
             <td>
-                ${account.balance <= 0 ? `<i class="fas fa-trash-alt"></i>` : '' }
+                ${account.balance <= 0 ? `<i class="fas fa-trash-alt" onclick="handleDeleteAccount(${account.accountNo})"></i>` : ''}
             </td> 
         </tr>
     `
+}
+
+async function handleDeleteAccount(accountNo) {
+    try {
+        const confirmation = confirm("Are you sure you want to do this?");
+        if (confirmation) {
+            const url = `/api/accounts/${accountNo}`
+            const config = {method: "delete"}
+
+            await fetch(url)
+            document.querySelector(`#row-${accountNo}`).remove()
+        }
+    } catch (e) {
+        console.log(e)
+    }
+}
+
+async function handleAddAccount(event) {
+    //prevent the forms default behaviour
+    event.preventDefault();
+    const form = event.target.form;
+    const isValid = form.checkValidity();
+
+    if(!isValid)
+        return;
+
+    //first step is to change the form into a java script object
+    const account = formToJsonObject(form);
+
+    //we send the object to the server
+
+    const url = `/api/accounts`;
+    const config = {
+        method : "post",
+        body : JSON.stringify(account),
+        headers : {"Content-Type" : "application/json" }
+    }
+    await fetch(url, config);
+    window.location.href = "index.html"
+    await handleLoadAccounts("All");
+}
+
+function formToJsonObject(form){
+    const formData = new FormData(form);
+    const formObj = {}
+
+    formData.forEach((value, key) => formObj[key] = value)
+
+    return formObj;
 }
