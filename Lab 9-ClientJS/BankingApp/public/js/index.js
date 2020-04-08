@@ -7,8 +7,22 @@ async function loadPage(pageName) {
     const page = await fetch(pageName);
     const pageContent = await page.text();
     document.querySelector("#main").innerHTML = pageContent;
+
+    if(pageName=="acct-trans.html")
+        await fillAccountsDD();
 }
 
+async function fillAccountsDD(){
+    const accounts = await getAccounts("All");
+    const content = accounts.map(account => changeAccountToHTMLOptions(account)).join("")
+    document.querySelector("#accountNo").innerHTML = content;
+}
+
+function changeAccountToHTMLOptions(account){
+    return `
+        <option value="${account.accountNo}"> ${account.accountNo} : ${account.balance} </option>
+    `
+}
 //get the accounts
 async function getAccounts(acctType) {
     try {
@@ -93,8 +107,29 @@ async function handleAddAccount(event) {
 function formToJsonObject(form){
     const formData = new FormData(form);
     const formObj = {}
-
     formData.forEach((value, key) => formObj[key] = value)
-
     return formObj;
 }
+
+async function handleAddTrans(event){
+    event.preventDefault();
+    const form = event.target.form;
+    const isValid = form.checkValidity();
+
+    if(!isValid)
+        return;
+
+    const trans = formToJsonObject(form);
+
+    const url = `/api/accounts/${trans.accountNo}/trans`
+    const config = {
+        method : "post",
+        body : JSON.stringify(trans),
+        headers : {"Content-Type" : "application/json" }
+    }
+
+    await fetch(url, config);
+    window.location.href = "index.html"
+    // await handleLoadAccounts("All");
+}
+
