@@ -1,1 +1,146 @@
-[{"acctType":"Saving","balance":1111,"accountNo":123123,"minimumBalance":1000},{"accountNo":4455,"acctType":"Current","balance":83295,"monthlyFee":15},{"accountNo":4455,"acctType":"Current","balance":7777,"monthlyFee":15},{"accountNo":99,"acctType":"Saving","balance":10000056699,"minimumBalance":1000},{"accountNo":3333,"acctType":"Saving","balance":3333,"minimumBalance":1000},{"acctType":"Saving","balance":123,"accountNo":1554064605885,"minimumBalance":1000},{"acctType":"Current","balance":34334,"accountNo":1554064731089,"monthlyFee":15},{"acctType":"Current","balance":123,"accountNo":1554064760507,"monthlyFee":15},{"acctType":"Current","balance":123,"accountNo":1554064830502,"monthlyFee":15},{"acctType":"Current","balance":123,"accountNo":1554064963522,"monthlyFee":15},{"acctType":"Current","balance":45,"accountNo":1554064983333,"monthlyFee":15},{"acctType":"Current","balance":99999999999,"accountNo":23434,"monthlyFee":15},{"acctType":"Current","balance":0,"accountNo":1554065030523,"monthlyFee":15},{"acctType":"Current","balance":4444444444,"accountNo":1554065073614,"monthlyFee":0},{"acctType":"Current","balance":19999999,"accountNo":1586345419473,"monthlyFee":15},{"acctType":"Saving","balance":299999999,"accountNo":1586345452205,"minimumBalance":1000},{"acctType":"Saving","balance":8888,"accountNo":1586345744058,"minimumBalance":1000},{"acctType":"Current","balance":0,"accountNo":1586345757044,"monthlyFee":15},{"acctType":"Current","balance":0,"accountNo":1586345768258,"monthlyFee":15},{"acctType":"Current","balance":0,"accountNo":1586345813609,"monthlyFee":15},{"acctType":"Current","balance":99,"accountNo":1586345822971,"monthlyFee":15},{"acctType":"Current","balance":6,"accountNo":1586345934614,"monthlyFee":15},{"acctType":"Current","balance":77,"accountNo":1586345939802,"monthlyFee":15},{"acctType":"Saving","balance":9,"accountNo":1586345946294,"minimumBalance":1000}]
+[
+  {
+    "acctType": "Saving",
+    "balance": 1111,
+    "accountNo": 123123,
+    "minimumBalance": 1000
+  },
+  {
+    "accountNo": 4455,
+    "acctType": "Current",
+    "balance": 83295,
+    "monthlyFee": 15
+  },
+  {
+    "accountNo": 4455,
+    "acctType": "Current",
+    "balance": 7777,
+    "monthlyFee": 15
+  },
+  {
+    "accountNo": 99,
+    "acctType": "Saving",
+    "balance": 10000056699,
+    "minimumBalance": 1000
+  },
+  {
+    "accountNo": 3333,
+    "acctType": "Saving",
+    "balance": 3333,
+    "minimumBalance": 1000
+  },
+  {
+    "acctType": "Saving",
+    "balance": 123,
+    "accountNo": 1554064605885,
+    "minimumBalance": 1000
+  },
+  {
+    "acctType": "Current",
+    "balance": 34334,
+    "accountNo": 1554064731089,
+    "monthlyFee": 15
+  },
+  {
+    "acctType": "Current",
+    "balance": 123,
+    "accountNo": 1554064760507,
+    "monthlyFee": 15
+  },
+  {
+    "acctType": "Current",
+    "balance": 123,
+    "accountNo": 1554064830502,
+    "monthlyFee": 15
+  },
+  {
+    "acctType": "Current",
+    "balance": 123,
+    "accountNo": 1554064963522,
+    "monthlyFee": 15
+  },
+  {
+    "acctType": "Current",
+    "balance": 45,
+    "accountNo": 1554064983333,
+    "monthlyFee": 15
+  },
+  {
+    "acctType": "Current",
+    "balance": 99999999999,
+    "accountNo": 23434,
+    "monthlyFee": 15
+  },
+  {
+    "acctType": "Current",
+    "balance": 0,
+    "accountNo": 1554065030523,
+    "monthlyFee": 15
+  },
+  {
+    "acctType": "Current",
+    "balance": 4444444444,
+    "accountNo": 1554065073614,
+    "monthlyFee": 0
+  },
+  {
+    "acctType": "Current",
+    "balance": 19999999,
+    "accountNo": 1586345419473,
+    "monthlyFee": 15
+  },
+  {
+    "acctType": "Saving",
+    "balance": 299999999,
+    "accountNo": 1586345452205,
+    "minimumBalance": 1000
+  },
+  {
+    "acctType": "Saving",
+    "balance": 8888,
+    "accountNo": 1586345744058,
+    "minimumBalance": 1000
+  },
+  {
+    "acctType": "Current",
+    "balance": 0,
+    "accountNo": 1586345757044,
+    "monthlyFee": 15
+  },
+  {
+    "acctType": "Current",
+    "balance": 0,
+    "accountNo": 1586345768258,
+    "monthlyFee": 15
+  },
+  {
+    "acctType": "Current",
+    "balance": 0,
+    "accountNo": 1586345813609,
+    "monthlyFee": 15
+  },
+  {
+    "acctType": "Current",
+    "balance": 99,
+    "accountNo": 1586345822971,
+    "monthlyFee": 15
+  },
+  {
+    "acctType": "Current",
+    "balance": 6,
+    "accountNo": 1586345934614,
+    "monthlyFee": 15
+  },
+  {
+    "acctType": "Current",
+    "balance": 77,
+    "accountNo": 1586345939802,
+    "monthlyFee": 15
+  },
+  {
+    "acctType": "Saving",
+    "balance": 9,
+    "accountNo": 1586345946294,
+    "minimumBalance": 1000
+  }
+]
