@@ -140,7 +140,6 @@ class AccountRepository {
             else {
                 account.withdraw(transaction.amount);
             }
-            console.log("addTransaction", account);
             await this.saveAccounts(accounts);
         } catch (err) {
             throw err;
