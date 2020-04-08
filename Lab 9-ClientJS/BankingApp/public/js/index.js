@@ -42,7 +42,10 @@ function changeAccountToHTMLRow(account) {
         <tr>
             <td>${account.accountNo}</td>
             <td>${account.acctType}</td>
-            <td>${account.balance}</td>   
+            <td>${account.balance}</td>  
+            <td>
+                ${account.balance <= 0 ? `<i class="fas fa-trash-alt"></i>` : '' }
+            </td> 
         </tr>
     `
 }

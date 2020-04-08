@@ -61,13 +61,13 @@
   },
   {
     "acctType": "Current",
-    "balance": 45,
+    "balance": 0,
     "accountNo": 1554064983333,
     "monthlyFee": 15
   },
   {
     "acctType": "Current",
-    "balance": 99999999999,
+    "balance": 0,
     "accountNo": 23434,
     "monthlyFee": 15
   },
@@ -79,13 +79,13 @@
   },
   {
     "acctType": "Current",
-    "balance": 4444444444,
+    "balance": 0,
     "accountNo": 1554065073614,
     "monthlyFee": 0
   },
   {
     "acctType": "Current",
-    "balance": 19999999,
+    "balance": 0,
     "accountNo": 1586345419473,
     "monthlyFee": 15
   },
@@ -97,7 +97,7 @@
   },
   {
     "acctType": "Saving",
-    "balance": 8888,
+    "balance": 0,
     "accountNo": 1586345744058,
     "minimumBalance": 1000
   },
