@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41a09d66-a0b1-413e-974b-05e906d9409e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/accounts.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/accounts.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/bank-account.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/current-account.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/saving-account.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/repositories/account-repository.js" beforeDir="false" afterPath="$PROJECT_DIR$/repositories/account-repository.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/account-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/account-service.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,18 +19,6 @@
         <option value="JavaScript File" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>type=&quot;submit&quot;</find>
-      <find>delete</find>
-      <find>cursor</find>
-      <find>form</find>
-      <find>flex</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>type=&quot;button&quot;</replace>
-    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -79,7 +62,7 @@
       <updated>1552898825558</updated>
       <workItem from="1552898826994" duration="15691000" />
       <workItem from="1553575798641" duration="1012000" />
-      <workItem from="1586954193654" duration="3466000" />
+      <workItem from="1586954193654" duration="6276000" />
     </task>
     <servers />
   </component>
@@ -91,5 +74,21 @@
       <screen x="0" y="23" width="3440" height="1379" />
     </state>
     <state x="2107" y="466" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.3440.1379@0.23.3440.1379" timestamp="1586957629888" />
+    <state x="2050" y="469" width="639" height="486" key="find.popup" timestamp="1586961236673">
+      <screen x="0" y="23" width="3440" height="1379" />
+    </state>
+    <state x="2050" y="469" width="639" height="486" key="find.popup/0.23.3440.1379@0.23.3440.1379" timestamp="1586961236673" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/repositories/account-repository.js</url>
+          <line>4</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

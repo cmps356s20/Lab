@@ -36,8 +36,8 @@ class AccountService {
     async updateAccount(req, res) {
         try {
             const account = req.body
-            await accountRepo.updateAccount(account)
-            res.status(200).json(req.body)
+            const updatedAccount = await accountRepo.updateAccount(account)
+            res.status(200).json(updatedAccount)
         } catch (err) {
             res.status(500).send(err)
         }

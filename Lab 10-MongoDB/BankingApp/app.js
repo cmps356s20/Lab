@@ -7,6 +7,7 @@ const mongoose = require('mongoose')
 const app = express();
 const port = 5000;
 
+//step1
 mongoose.connect(
     'mongodb://127.0.0.1:27017/BankDB',
     {useNewUrlParser: true, useUnifiedTopology: true}

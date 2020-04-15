@@ -1,75 +1,36 @@
-const path = require('path');
+const Account = require('../models/account')
 
 class AccountRepository {
-
-    constructor() {
-       // this.accountsFilePath = path.join(__dirname, '../data/accounts.json');
-    }
-
     //Get account from accounts.json file
     async getAccounts(acctType) {
-        // let accounts = await fs.readJSON(this.accountsFilePath);
-        //
-        // if (acctType && acctType != 'All') {
-        //     accounts = accounts.filter(acct => acct.acctType === acctType);
-        // }
-        //
-        // //This will add Account methods back to the deserialized account.
-        // for (const acct of accounts) {
-        //     if (acct.acctType === "Saving")
-        //         Object.setPrototypeOf(acct, CurrentAccount.prototype);
-        //     else
-        //         Object.setPrototypeOf(acct, SavingAccount.prototype);
-        // }
-        // return accounts;
+        if(acctType && acctType != 'All')
+            return await Account.find({acctType})
+        else
+            return await Account.find();
     }
-
-    //Get account by accountNo
+    //gets account by accountNO
     async getAccount(accountNo) {
-        // try {
-        //     const accounts = await this.getAccounts();
-        //     return accounts.find(account => account.accountNo == accountNo);
-        // } catch (err) {
-        //     throw err;
-        // }
+       return await Account.findOne({_id: accountNo})
     }
-
     async addAccount(account) {
-        // account.accountNo = Date.now();
-        // account.balance = parseInt(account.balance);
-        // if (account.acctType === 'Saving')
-        //     account.minimumBalance = 1000;
-        // else
-        //     account.monthlyFee = 15;
-        //
-        // try {
-        //     const accounts = await this.getAccounts();
-        //     accounts.push(account);
-        //     return await this.saveAccounts(accounts);
-        // } catch (err) {
-        //     console.log(err);
-        // }
+        return await Account.create(account);
     }
-
     async deleteAccount(accountNo) {
-        // try {
-        //     const accounts = await this.getAccounts();
-        //     const index = accounts.findIndex(acct => acct.accountNo == accountNo);
-        //     if (index >= 0) {
-        //         accounts.splice(index, 1);
-        //         return await this.saveAccounts(accounts);
-        //     }
-        // } catch (err) {
-        //     throw err;
-        // }
+        return await Account.deleteOne({_id : accountNo})
     }
 
+    async deleteAllAccounts(){
+        return await Account.delete()
+    }
     async updateAccount(account) {
+        //Account.update({_id: account._id}, {$set: account})
+        return await Account.findByIdAndUpdate(account._id, account);
+
         // try {
         //     const accounts = await this.getAccounts();
         //     const index = accounts.findIndex(acct => acct.accountNo == account.accountNo);
         //     if (index >= 0) {
-        //         accounts[index] = account;
+        //         accounts[index] = {...accounts[index], ...account};
         //         return await this.saveAccounts(accounts);
         //     }
         //
