@@ -1,6 +1,11 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
+const options = {
+    toJSON : {
+        virtuals : true
+    }
+}
 const accountSchema = new Schema({
     acctType : {
         type : String,
@@ -12,7 +17,12 @@ const accountSchema = new Schema({
         min : [0 , "You can not have a negative balance inside the account"],
         required : [true, "Balance is a required field"]
     }
-});
+}, options);
 
-const Account = mongoose.model('Account', accountSchema);
-module.exports = Account;
+accountSchema.virtual('accountNo').get(()=>{
+    return this._id;
+})
+accountSchema.virtual('interestRate').get(()=>{
+    return this.balance * 0.5;
+})
+module.exports = mongoose.model('Account', accountSchema);

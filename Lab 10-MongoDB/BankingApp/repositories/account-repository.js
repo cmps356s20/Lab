@@ -1,27 +1,32 @@
 const Account = require('../models/account')
+const Transaction = require('../models/accounts-trans')
 
 class AccountRepository {
     //Get account from accounts.json file
     async getAccounts(acctType) {
-        if(acctType && acctType != 'All')
+        if (acctType && acctType != 'All')
             return await Account.find({acctType})
         else
             return await Account.find();
     }
+
     //gets account by accountNO
     async getAccount(accountNo) {
-       return await Account.findOne({_id: accountNo})
+        return await Account.findOne({_id: accountNo})
     }
+
     async addAccount(account) {
         return await Account.create(account);
     }
+
     async deleteAccount(accountNo) {
-        return await Account.deleteOne({_id : accountNo})
+        return await Account.deleteOne({_id: accountNo})
     }
 
-    async deleteAllAccounts(){
+    async deleteAllAccounts() {
         return await Account.delete()
     }
+
     async updateAccount(account) {
         //Account.update({_id: account._id}, {$set: account})
         return await Account.findByIdAndUpdate(account._id, account);
@@ -87,23 +92,20 @@ class AccountRepository {
     }
 
     async addTransaction(transaction) {
-        // console.log(transaction);
-        // transaction.accountNo = parseInt(transaction.accountNo);
-        // transaction.amount = parseInt(transaction.amount);
-        // try {
-        //     const accounts = await this.getAccounts();
-        //     const account = accounts.find(account => account.accountNo == transaction.accountNo);
-        //     if (transaction.type == 'Deposit') {
-        //         account.deposit(transaction.amount);
-        //     }
-        //     else {
-        //         account.withdraw(transaction.amount);
-        //     }
-        //     console.log("addTransaction", account);
-        //     await this.saveAccounts(accounts);
-        // } catch (err) {
-        //     throw err;
-        // }
+        transaction.amount = parseInt(transaction.amount);  //123
+        const account = await this.getAccount(transaction.accountNo);  //123
+
+        if (transaction.transType == 'Deposit') {
+            account.balance += transaction.amount;
+        } else {
+            account.balance -= transaction.amount;
+        }
+
+        const newTransaction = await Transaction.create(transaction);
+        await account.save();
+
+        return  newTransaction;
+
     }
 }
 
