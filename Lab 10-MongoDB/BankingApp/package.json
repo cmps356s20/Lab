@@ -13,6 +13,7 @@
     "express": "latest",
     "fs-extra": "latest",
     "mocha": "latest",
+    "mongoose": "^5.9.9",
     "morgan": "latest"
   }
 }
