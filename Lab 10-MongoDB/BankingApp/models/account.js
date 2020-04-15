@@ -19,10 +19,11 @@ const accountSchema = new Schema({
     }
 }, options);
 
-accountSchema.virtual('accountNo').get(()=>{
+accountSchema.virtual('accountNo').get(function (){
     return this._id;
 })
-accountSchema.virtual('interestRate').get(()=>{
+accountSchema.virtual('interestRate').get(function (){
     return this.balance * 0.5;
 })
+
 module.exports = mongoose.model('Account', accountSchema);

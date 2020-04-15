@@ -14,6 +14,7 @@ router.route('/accounts/:id')
     .delete(accountService.deleteAccount);
 
 router.route('/accounts/:id/trans')
-    .post(accountService.addTransaction);
+    .post(accountService.addTransaction)
+    .get(accountService.getTransaction)
 
 module.exports = router;

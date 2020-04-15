@@ -62,6 +62,15 @@ class AccountService {
             res.status(500).send(err);
         }
     }
+    async getTransaction(req, res) {
+        try {
+            const accountNo = req.params.id;
+            res.status(200).json(await accountRepo.getTransaction(accountNo));
+        }
+        catch (err) {
+            res.status(500).send(err);
+        }
+    }
 }
 
 module.exports = new AccountService();

@@ -91,6 +91,16 @@ class AccountRepository {
         //return await fs.writeJSON(this.accountsFilePath, accounts);
     }
 
+    async getTransaction(accountNo){
+        const trans =  await Transaction.find({accountNo}).populate('accountNo');
+        return trans.map(tran=>{
+            const newTrans = tran.toObject();
+            newTrans.account = tran.accountNo;
+            delete newTrans.accountNo;
+            return newTrans;
+        })
+
+    }
     async addTransaction(transaction) {
         transaction.amount = parseInt(transaction.amount);  //123
         const account = await this.getAccount(transaction.accountNo);  //123
