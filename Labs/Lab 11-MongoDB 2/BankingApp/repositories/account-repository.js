@@ -9,20 +9,19 @@ class AccountRepository {
         this.accountFilePath = path.join(__dirname, '../data/accounts.json');
     }
     //Get account from accounts.json file
+
     async getAccounts(acctType) {
-        if (acctType && acctType != 'All')
-            return await Account.find({acctType})
-        else
-            return await Account.find();
+       return await Account.getAccounts(acctType);
     }
 
     //gets account by accountNO
     async getAccount(accountNo) {
-        return await Account.findOne({_id: accountNo})
+        const account = await Account.findOne({_id: accountNo})
     }
 
     async addAccount(account) {
-        return await Account.create(account);
+        const newAccount = await Account.create(account);
+        return await newAccount.countDocuments();
     }
 
     async deleteAccount(accountNo) {
