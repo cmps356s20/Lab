@@ -22,14 +22,42 @@ accountSchema.methods.countNumberOfDocuments = async function(){
     const totalDocuments = await Account.countDocuments();
     return totalDocuments;
 }
-
 accountSchema.statics.getAccounts = async function(acctType){
-
-        console.log('here');
         if (acctType!=null && acctType != 'All')
-            return await Account.find({acctType})
+          return await Account.find({acctType})
         else
             return await Account.find();
+}
+
+accountSchema.statics.sumBalance = async function(){
+   const sumBalance = await Account.aggregate([
+       {
+           $group : {
+               _id : "$acctType",
+               totalBalance : {
+                   $sum : "$balance"
+               }
+           }
+       },
+       {
+           $project : {
+
+               "Account Type " : "$_id",
+               _id : 0,
+               totalBalance : 1,
+           }
+       },
+       {
+           $sort : {
+               totalBalance : -1
+           }
+       }
+       // {
+       //     $limit : 1
+       // }
+   ]);
+
+   return sumBalance;
 }
 
 accountSchema.virtual("minimumBalance").get(function () {
@@ -52,14 +80,13 @@ const Account = mongoose.model('Account', accountSchema);
 module.exports = Account;
 
 // class to access the methods of the class
-
-class Student {
-    static getName(){
-        return 'Ali';
-    }
-    getAge(){
-        return '22'
-    }
-}
-
-Student.getName()
+//
+// class Student {
+//     static getName(){
+//         return 'Ali';
+//     }
+//     getAge(){
+//         return '22'
+//     }
+// }
+//

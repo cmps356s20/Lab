@@ -8,7 +8,6 @@ class AccountRepository {
     constructor() {
         this.accountFilePath = path.join(__dirname, '../data/accounts.json');
     }
-    //Get account from accounts.json file
 
     async getAccounts(acctType) {
        return await Account.getAccounts(acctType);
@@ -107,28 +106,39 @@ class AccountRepository {
 
     }
     async addTransaction(transaction) {
-        transaction.amount = parseInt(transaction.amount);  //123
-        const account = await this.getAccount(transaction.accountNo);  //123
-
-        if (transaction.transType == 'Deposit') {
-            account.balance += transaction.amount;
-        } else {
-            account.balance -= transaction.amount;
+        console.log(transaction);
+        // transaction.accountNo = parseInt(transaction.accountNo);
+        transaction.amount = parseInt(transaction.amount);
+        try {
+            const account = await this.getAccount(transaction.accountNo);
+            if (transaction.transType == 'Deposit') {
+                account.balance += (transaction.amount);
+            } else {
+                account.balance -= (transaction.amount);
+            }
+            const trans = await Transaction.create(transaction);
+            await this.updateAccount(account);
+            return trans;
+        } catch (err) {
+            throw err;
         }
-
-        const newTransaction = await Transaction.create(transaction);
-        await account.save();
-
-        return  newTransaction;
-
     }
 
     async initDB(){
+        //testing
+        // const sumBalance = await Account.sumBalance();
+        // sumBalance.forEach(s=> console.log(s.totalBalance))
+
+        const accountTrans = await Transaction.getAllTransGroupedByAccNo();
+        accountTrans.forEach(account=>{
+            console.log(account);
+        })
+
         Account.countDocuments().then(async count=>{
-            const accounts = await fs.readJSON(this.accountFilePath);
             if(count==0){
-                console.log('No accounts were not found so initializing the DB from JSON file')
+                const accounts = await fs.readJSON(this.accountFilePath);
                 accounts.forEach(account=>this.addAccount(account));
+                console.log('No accounts were not found so initializing the DB from JSON file')
             }
             else{
                 console.log('DB is already initialized.')
