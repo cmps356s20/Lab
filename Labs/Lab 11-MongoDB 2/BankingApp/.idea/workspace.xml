@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="41a09d66-a0b1-413e-974b-05e906d9409e" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1aZrvhfVTdZ5e5sYCtaJWIYGRdE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="11.9.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+  </component>
+  <component name="RunManager">
+    <configuration name="app.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/app.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.app.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="41a09d66-a0b1-413e-974b-05e906d9409e" name="Default Changelist" comment="" />
+      <created>1552898825558</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1552898825558</updated>
+      <workItem from="1552898826994" duration="15691000" />
+      <workItem from="1553575798641" duration="1012000" />
+      <workItem from="1586954193654" duration="9991000" />
+      <workItem from="1587001393042" duration="319000" />
+      <workItem from="1587559268120" duration="1117000" />
+      <workItem from="1587560393845" duration="511000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2107" y="466" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586957629888">
+      <screen x="0" y="23" width="3440" height="1379" />
+    </state>
+    <state x="2107" y="466" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.3440.1379@0.23.3440.1379" timestamp="1586957629888" />
+    <state x="424" y="351" key="SettingsEditor" timestamp="1587560244264">
+      <screen x="0" y="23" width="3440" height="1379" />
+    </state>
+    <state x="424" y="351" key="SettingsEditor/0.23.3440.1379@0.23.3440.1379" timestamp="1587560244264" />
+    <state x="2050" y="469" width="639" height="486" key="find.popup" timestamp="1586961236673">
+      <screen x="0" y="23" width="3440" height="1379" />
+    </state>
+    <state x="2050" y="469" width="639" height="486" key="find.popup/0.23.3440.1379@0.23.3440.1379" timestamp="1586961236673" />
+  </component>
+</project>

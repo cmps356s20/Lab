@@ -1,0 +1,19 @@
+{
+  "name": "bankingapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha **/*.spec.js"
+  },
+  "author": "abdulahi",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "latest",
+    "express": "latest",
+    "fs-extra": "latest",
+    "mocha": "latest",
+    "mongoose": "^5.9.10",
+    "morgan": "latest"
+  }
+}
