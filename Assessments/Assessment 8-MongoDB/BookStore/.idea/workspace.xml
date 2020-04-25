@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c17d3011-1c98-4346-aad6-496ff1f5c1ca" name="Default Changelist" comment="" />
+    <list default="true" id="c17d3011-1c98-4346-aad6-496ff1f5c1ca" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/back-up.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/borrowersWithAddress.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/mappedBooks.json" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
   <component name="ProjectId" id="1b0CA4xaZn9YfMCnHHLadPWr1IM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -36,6 +45,9 @@
       <updated>1587759477480</updated>
       <workItem from="1587759481171" duration="5206000" />
       <workItem from="1587775059069" duration="9425000" />
+      <workItem from="1587790083559" duration="3000" />
+      <workItem from="1587790150727" duration="4000" />
+      <workItem from="1587790170122" duration="2000" />
     </task>
     <servers />
   </component>
@@ -67,17 +79,5 @@
       <screen x="0" y="23" width="3440" height="1379" />
     </state>
     <state x="475" y="338" width="670" height="676" key="search.everywhere.popup/0.23.3440.1379@0.23.3440.1379" timestamp="1587774270526" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/public/js/index.js</url>
-          <line>254</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
