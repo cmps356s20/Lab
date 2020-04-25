@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c17d3011-1c98-4346-aad6-496ff1f5c1ca" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1b0CA4xaZn9YfMCnHHLadPWr1IM" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/data" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c17d3011-1c98-4346-aad6-496ff1f5c1ca" name="Default Changelist" comment="" />
+      <created>1587759477480</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1587759477480</updated>
+      <workItem from="1587759481171" duration="5206000" />
+      <workItem from="1587775059069" duration="9425000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="498" y="455" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1587777406952">
+      <screen x="0" y="23" width="3440" height="1379" />
+    </state>
+    <state x="498" y="455" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.3440.1379@0.23.3440.1379" timestamp="1587777406952" />
+    <state width="1567" height="377" key="GridCell.Tab.0.bottom" timestamp="1587775007162">
+      <screen x="0" y="23" width="3440" height="1379" />
+    </state>
+    <state width="1567" height="377" key="GridCell.Tab.0.bottom/0.23.3440.1379@0.23.3440.1379" timestamp="1587775007162" />
+    <state width="1567" height="377" key="GridCell.Tab.0.center" timestamp="1587775007161">
+      <screen x="0" y="23" width="3440" height="1379" />
+    </state>
+    <state width="1567" height="377" key="GridCell.Tab.0.center/0.23.3440.1379@0.23.3440.1379" timestamp="1587775007161" />
+    <state width="1567" height="377" key="GridCell.Tab.0.left" timestamp="1587775007161">
+      <screen x="0" y="23" width="3440" height="1379" />
+    </state>
+    <state width="1567" height="377" key="GridCell.Tab.0.left/0.23.3440.1379@0.23.3440.1379" timestamp="1587775007161" />
+    <state width="1567" height="377" key="GridCell.Tab.0.right" timestamp="1587775007162">
+      <screen x="0" y="23" width="3440" height="1379" />
+    </state>
+    <state width="1567" height="377" key="GridCell.Tab.0.right/0.23.3440.1379@0.23.3440.1379" timestamp="1587775007162" />
+    <state x="475" y="338" width="670" height="676" key="search.everywhere.popup" timestamp="1587774270526">
+      <screen x="0" y="23" width="3440" height="1379" />
+    </state>
+    <state x="475" y="338" width="670" height="676" key="search.everywhere.popup/0.23.3440.1379@0.23.3440.1379" timestamp="1587774270526" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/public/js/index.js</url>
+          <line>254</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
