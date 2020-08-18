@@ -10,7 +10,7 @@
     "build": "parcel build client/src/index.html --public-url ./"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "chance": "^1.0.18",
     "cors": "^2.8.5",
     "express": "latest",
